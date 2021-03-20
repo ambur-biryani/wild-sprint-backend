@@ -18,7 +18,7 @@ const billingRoutes = require('./api/routes/billingRoutes');
 mongoose.Promise= global.Promise;
 
 mongoose
-     .connect( process.env.ATLAS_URI, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
+     .connect( "mongodb+srv://nitish:nitish@iwp.c0ufz.mongodb.net/wildsprint?retryWrites=true&w=majority", { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
      .then(() => console.log( 'Database Connected' ))
      .catch(err => console.log( err ));
      

@@ -20,6 +20,8 @@ exports.postFundraiser = async (req, res, next) => {
         const habitat= req.body.habitat;
         const description = req.body.description;
         const status= req.body.status;
+        const meetingName= req.body.meetingName;
+        const meetingId= req.body.meetingId;
         if (!req.file) {
           const error = new Error('No image provided.');
           error.statusCode = 422;
@@ -33,6 +35,8 @@ exports.postFundraiser = async (req, res, next) => {
             description : description,
             status: status,
             image: imageUrl,
+            meetingName: meetingName,
+            meetingId: meetingId,
             userId: req.userId,
             
         });

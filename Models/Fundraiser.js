@@ -31,6 +31,14 @@ const fundRaiserSchema= new Schema({
         type:String,
        
     },
+    meetingName:{
+        type:String,
+       
+    },
+    meetingId:{
+        type:String,
+       
+    },
     bills:[{
         type: Schema.Types.ObjectId,
         ref:'billing'
