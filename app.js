@@ -7,6 +7,7 @@ const cors = require('cors');
 const path = require('path');
 const multer = require('multer');
 require('dotenv').config()
+
 //OPEN IMPORT OF THE ROUTES
 const authRoutes = require('./api/routes/authRoutes'); 
 const fundraiserRoutes = require('./api/routes/fundraiserRoutes'); 
